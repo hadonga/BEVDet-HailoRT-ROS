@@ -15,6 +15,18 @@
 - **ubuntu-20.04、CUDA-11.3、cuDNN-8.6.0、TensorRT-8.5**
 - **yaml-cpp、Eigen3、libjpeg**
 
+## 1.1 Docker
+~~~python
+docker compose build
+docker compose up
+
+apt-get install ros-noetic-jsk-recognition-msgs
+apt-get install ros-noetic-jsk-rviz-plugins
+~~~
+
+inside docker "Unable to find either executable 'empy' or Python module 'em'"
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+
 # 2 Build
 
 ~~~python
