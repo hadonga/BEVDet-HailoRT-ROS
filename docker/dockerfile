@@ -1,8 +1,8 @@
-FROM ytwanghaoyu/bevdet:bevdet-6c75bb4e-fix
-# FROM nvcr.io/nvidia/tensorrt:23.01-py3
-
-# https://docs.nvidia.com/deeplearning/tensorrt/container-release-notes/index.html 
-# TensorRT 8.5.2.2
+FROM hadonga/bevdet_ros:0.1
 ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Seoul
 
-RUN apt-get update && apt-get -y install software-properties-common libzmq3-dev
+# set userinfo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN apt-get update && apt-get install -y x11-xserver-utils wget
