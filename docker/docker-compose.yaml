@@ -1,11 +1,12 @@
 version: '1.0'
+
 services:
-  bevdet_vis:
+  bevdet_ros:
     container_name: bevdet_ros_$USER
     image: bevdet_ros_$USER
     build:
-      context: ..
-      dockerfile: docker/dockerfile
+      context: ./
+      dockerfile: dockerfile
     deploy:
       resources:
         reservations:
@@ -14,16 +15,14 @@ services:
               device_ids: [ '0' ]
               capabilities: [ gpu, compute, utility, graphics ]
     volumes:
-      - ../:/workspace/
+      - ../:/bevdet_ros
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
       - ~/.Xauthority:/root/.Xauthority:ro
     network_mode: host
     environment:
       - "DISPLAY"
       - "LIBGL_ALWAYS_INDIRECT=1"
-    command: tail -f /dev/null
+    # command: tail -f /dev/null
+    tty: true
     ipc: host
-    ports:
-      - "9950:9950" # receive data from runtime 
-      - "9951:9951" # http display
     privileged: true
