@@ -1,14 +1,22 @@
 
-# BEVDet for TensorRT, C++, ROS
+# BEVDet for HailoRT, C++, ROS2
+
+This repository contains source code and models for BEVDet Lite version inference using HailoRT, ROS2 & C++.
+Reference:
+- [Yolo-HailoRT-ROS2](https://github.com/Ar-Ray-code/YOLO-HailoRT-ROS2)
+- [bevdet-tensorrt-ros](https://github.com/linClubs/BEVDet-ROS-TensorRT)
+- [bevdet-tensorrt-cpp](https://github.com/LCH1238/bevdet-tensorrt-cpp)
+- [BEVDet](https://github.com/HuangJunJie2017/BEVDet)
+- [mmdetection3d](https://github.com/open-mmlab/mmdetection3d)
+- [nuScenes](https://www.nuscenes.org/)
 
 <p align="center">
   <img src="./doc/1.gif" width="375" height="338" />
 </p>
 
-
-+ This repository contains source code and models for BEVDet online real-time inference using CUDA, TensorRT, ROS1 & C++.
-
-+ To Do: Support ROS2
+## BEVDet lite ver. 
+  - Only Front-view image as input
+  - Modify LSS 
 
 
 # 1 Envornment setup
@@ -19,6 +27,9 @@ We provide the docker image including necessary dependcies.
 docker compose build
 docker compose up
 ~~~
+Requirements
+HailoRT 4.17.0
+ROS-Jazzy
 
 ## 1.2 Custom setup
 - **ubuntu-20.04;CUDA-11.3; cuDNN-8.6.0; TensorRT-8.5.2.2; ROS1 Melodic**
@@ -75,10 +86,6 @@ source devel/setup.bash
 ---
 
 # References
-- [bevdet-tensorrt-ros](https://github.com/linClubs/BEVDet-ROS-TensorRT)
-- [bevdet-tensorrt-cpp](https://github.com/LCH1238/bevdet-tensorrt-cpp)
-- [BEVDet](https://github.com/HuangJunJie2017/BEVDet)
-- [mmdetection3d](https://github.com/open-mmlab/mmdetection3d)
-- [nuScenes](https://www.nuscenes.org/)
+
 
 ---
