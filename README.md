@@ -1,5 +1,5 @@
 
-# BEVDet for HailoRT, C++, ROS2
+# BEVDet for HailoRT, C++, ROS1/2 (in progress)
 
 This repository contains source code and models for BEVDet Lite version inference using HailoRT, ROS2 & C++.
 Reference:
