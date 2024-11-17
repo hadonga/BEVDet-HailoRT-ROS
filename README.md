@@ -2,18 +2,19 @@
 # BEVDet for HailoRT, C++, ROS1/2 (in progress)
 
 This repository contains source code and models for BEVDet Lite version inference using HailoRT, ROS2 & C++.
-Reference:
+
+## BEVDet lite ver. 
+  - Only Front-view image as input
+  - Modified LSS
+  - Others
+    
+## Reference:
 - [Yolo-HailoRT-ROS2](https://github.com/Ar-Ray-code/YOLO-HailoRT-ROS2)
 - [bevdet-tensorrt-ros](https://github.com/linClubs/BEVDet-ROS-TensorRT)
 - [bevdet-tensorrt-cpp](https://github.com/LCH1238/bevdet-tensorrt-cpp)
 - [BEVDet](https://github.com/HuangJunJie2017/BEVDet)
 - [mmdetection3d](https://github.com/open-mmlab/mmdetection3d)
 - [nuScenes](https://www.nuscenes.org/)
-
-## BEVDet lite ver. 
-  - Only Front-view image as input
-  - Modify LSS 
-
 
 # 1 Envornment setup
 
