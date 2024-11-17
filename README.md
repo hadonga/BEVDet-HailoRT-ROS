@@ -10,10 +10,6 @@ Reference:
 - [mmdetection3d](https://github.com/open-mmlab/mmdetection3d)
 - [nuScenes](https://www.nuscenes.org/)
 
-<p align="center">
-  <img src="./doc/1.gif" width="375" height="338" />
-</p>
-
 ## BEVDet lite ver. 
   - Only Front-view image as input
   - Modify LSS 
